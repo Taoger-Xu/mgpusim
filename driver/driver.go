@@ -17,6 +17,7 @@ import (
 	"github.com/tebeka/atexit"
 )
 
+// driver首先作为GPU编程和GPU硬件之间的接口，提供所有的`GPU-programming API`，同时`driver`本身是一个`component`
 // Driver is an Akita component that controls the simulated GPUs
 type Driver struct {
 	*sim.TickingComponent
